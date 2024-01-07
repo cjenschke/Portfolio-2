@@ -1,0 +1,11 @@
+.project {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+}
+
