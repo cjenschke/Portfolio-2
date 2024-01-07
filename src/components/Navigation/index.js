@@ -1,23 +1,46 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './style.css';
 
 function Navigation() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleToggle = () => {
+    setIsOpen(!isOpen);
+  };
+
+  const closeMenu = () => {
+    setIsOpen(false);
+  };
+
   return (
-    <nav>
-      <ul>
+    <nav className="navbar">
+      <div className="hamburger" onClick={handleToggle}>
+        <div className="bar"></div>
+        <div className="bar"></div>
+        <div className="bar"></div>
+      </div>
+      <ul className={isOpen ? 'nav-links open' : 'nav-links'}>
         <li>
-          <Link to="/">About Me</Link>
+          <Link to="/" onClick={closeMenu}>
+            About Me
+          </Link>
         </li>
         <li>
-          <Link to="/portfolio">Portfolio</Link>
+          <Link to="/portfolio" onClick={closeMenu}>
+            Portfolio
+          </Link>
         </li>
         <li>
-          <Link to="/contact">Contact</Link>
+          <Link to="/contact" onClick={closeMenu}>
+            Contact
+          </Link>
         </li>
         <li>
-          <Link to="/resume">Resume</Link>
-        </li>{' '}
+          <Link to="/resume" onClick={closeMenu}>
+            Resume
+          </Link>
+        </li>
       </ul>
     </nav>
   );
