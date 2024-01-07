@@ -4,4 +4,16 @@ footer {
     text-align: center;
 }
 
-
+.social-media-links {
+    margin-top: 10px;
+  }
+  
+  .social-media-links a {
+    margin: 0 10px;
+    color: red; 
+    font-size: 40px; 
+  }
+  
+  .social-media-links a:hover {
+    color: #555; 
+  }
