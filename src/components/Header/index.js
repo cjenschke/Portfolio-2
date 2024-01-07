@@ -1,11 +1,12 @@
 import React from 'react';
+import Navigation from '../Navigation';
 import './style.css';
 
 function Header() {
   return (
     <header>
       <h1>Cimarron Jenschke</h1>
-      {/* Navigation Component will be inserted here */}
+      <Navigation />
     </header>
   );
 }

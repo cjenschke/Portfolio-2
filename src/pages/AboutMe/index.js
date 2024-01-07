@@ -5,7 +5,7 @@ function AboutMe() {
   return (
     <div className="about-me">
       <h2>About Me</h2>
-      <img src="../public/IMG_0405.jpeg" alt="Cimarron Jenschke" />
+      <img src="/IMG_0405.jpeg" alt="Cimarron Jenschke" />
       <p>Bio goes here.</p>
     </div>
   );
