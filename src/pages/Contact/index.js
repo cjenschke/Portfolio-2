@@ -2,13 +2,24 @@ import React from 'react';
 import './style.css';
 
 function Contact() {
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    // Netlify Forms handles the submission
+  };
+
   return (
     <div className="contact">
       <h2>Contact Me</h2>
-      <form>
-        <input type="text" placeholder="Name" />
-        <input type="email" placeholder="Email" />
-        <textarea placeholder="Message"></textarea>
+      <form
+        onSubmit={handleSubmit}
+        name="contact"
+        method="POST"
+        data-netlify="true"
+      >
+        <input type="hidden" name="form-name" value="contact" />
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" required></textarea>
         <button type="submit">Send</button>
       </form>
     </div>
