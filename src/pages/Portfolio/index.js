@@ -22,11 +22,11 @@ function Portfolio() {
       repoUrl: 'https://github.com/cjenschke/Nibble-Network',
     },
     {
-      title: 'Note Taker',
-      description: 'Simple note taker for daily tasks.',
-      imageUrl: '/notetaker.png',
-      projectUrl: 'https://morning-sands-26761-fdd1c7542253.herokuapp.coml',
-      repoUrl: 'https://github.com/cjenschke/Note-Taker',
+      title: 'Syntax',
+      description: 'Band website template for future use.',
+      imageUrl: '/homepage.png',
+      projectUrl: 'https://syntax-8rz6.onrender.com/members',
+      repoUrl: 'https://github.com/cjenschke/Syntax',
     },
     {
       title: 'Weather Dashboard',
